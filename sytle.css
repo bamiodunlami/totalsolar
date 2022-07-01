@@ -54,6 +54,11 @@ section{
     margin-right: 20px;
 }
 
+.section-one-image img{
+    width: 25vw;
+    height: auto;
+}
+
 
 /* -------Section two-------*/
 #section-two{
@@ -149,7 +154,7 @@ section{
 
 
 
-
+/* mobile phone */
 @media (max-width: 420px){
 
 /* ----------Pre determination-----*/
@@ -172,6 +177,14 @@ section{
 
 #head-section{
 text-align: center;
+}
+
+.row1{
+    flex-direction: column-reverse;
+}
+.section-one-image img{
+    width: 50vw;
+    height: auto;
 }
 
 .btn-header:last-child{
