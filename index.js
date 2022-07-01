@@ -68,3 +68,7 @@ $(document).ready(function(){
         $("#section-four").hide();
     });
 });
+
+// git remote add origin https://github.com/bamiodunlami/totalsolar.git
+// git branch -M main
+// git push -u origin main
