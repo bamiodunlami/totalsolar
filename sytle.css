@@ -64,6 +64,17 @@ section{
 #section-two{
     height: 100vh;
 }
+
+.section-two-texts{
+    padding: 2%;
+}
+
+.section-two-texts img{
+    width: 10vw;
+    height: auto;
+}
+
+
 .cal{
     background-color: #f5f5f5;
     border-radius: 10px;
@@ -194,6 +205,11 @@ text-align: center;
 /* section two */
 #section-two{
     text-align: center;
+}
+
+.section-two-texts img{
+    width: 50vw;
+    height: auto;
 }
 
 
