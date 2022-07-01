@@ -39,10 +39,10 @@ $(document).ready(function(){
         $("#section-three").show();
     });
 
-    $("#back-to-two").click(function(){
-        $("#head-section").slideToggle();
-        $("#section-three").hide();
-    });
+    // $("#back-to-two").click(function(){
+    //     $("#head-section").slideToggle();
+    //     $("#section-three").hide();
+    // });
 
     //Reset Button
     $("#btn-reset").on('click', function(){

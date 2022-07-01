@@ -119,6 +119,11 @@ section{
     font-size: 36px;
 }
 
+.section-three-img img{
+    width: 25vw;
+    height: auto;
+}
+
 
 /* Section four */
 #section-four{
@@ -156,12 +161,12 @@ section{
 }
 
 
-/* ----footer----- */
+/* ----footer-----
 .footer{
     background-color: #001924;
     color: #fff;
     padding: 10px;
-}
+} */
 
 
 
@@ -181,7 +186,7 @@ section{
     }  
 
     section{
-        padding: 20vh 8%;
+        padding: 14vh 8%;
         
     }
 /* ----------------------------- */
@@ -196,6 +201,7 @@ text-align: center;
 .section-one-image img{
     width: 50vw;
     height: auto;
+    margin-bottom: 20px;
 }
 
 .btn-header:last-child{
@@ -210,21 +216,36 @@ text-align: center;
 .section-two-texts img{
     width: 50vw;
     height: auto;
+    margin-bottom: 20px;
+}
+
+.reset-back{
+    width: 100%;
 }
 
 
 /* Section three */
+.row-3{
+    flex-direction: column-reverse;
+}
 
-/* section two */
+.section-three-img img{
+    width: 50vw;
+    height: auto;
+    margin-bottom: 20px;
+}
+
 #section-three{
     text-align: center;
 }
 .sec-3-heading-text{
-    font-size: 32px;
+    font-size: 28px;
 }
-.reset-back{
-    width: 100%;
+.btn-sec-3{
+ margin-top: 10px;
 }
+
+
 
 
 /* ------sectio 4------ */
