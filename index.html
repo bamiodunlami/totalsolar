@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Total Solar | Uninterrupted Power</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;800;900&display=swap" rel="stylesheet">
+    <!-- font awsome -->
+    <script src="https://kit.fontawesome.com/cbf7b60e46.js" crossorigin="anonymous"></script>
+    
+    <!-- stylesheet -->
+    <link href="sytle.css" rel="stylesheet">
+  </head>
+
+  <body>
+      <!-- Nav Bar -->
+      <!-- <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#">TotalSolar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>  -->
+
+      <!-- Section 1 -->
+    <section id="head-section">
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <h1 class="heading-text">Enjoy 24/7 Power supply</h1>
+                <p class="heading-text" >Calculate the size of solar needed 
+                    for your home, office... and find a verified Installer.
+                </p>
+                <button id="calculate" type="button" class="btn btn-header btn-warning btn-lg ">Calculate now</button>
+                <button id="quote" type="button" class="btn btn-header btn-outline-warning btn-lg">Find Installer</button>
+            </div>
+
+            <!-- <div class="col-md-6 col-sm-12">
+                <div class="calculator">
+                    <input type="text"
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+
+    <!-- Section two Load calculation -->
+    <section id="section-two">
+      <div class="row">
+        <div class="col-md-4 col-sm-12">
+          <h1 class="section-two-text">Your loads</h1>
+                <p class="section-two-text">Enter your loads, quatity and their sizes, to add more loads, click on ADD MORE</p>
+        </div>
+
+        <div class="col-md-8 col-sm-12 cal">
+
+          <!-- titles -->
+          <div class="cal-title-bar">
+              <div class="col-5 cal-title ">
+                <h6>Appliances</h6>
+              </div>
+
+              <div class="col cal-title">
+                <h6>Qty</h6>
+              </div>
+
+              <div class="col cal-title">
+                <h6>Watt</h6>
+              </div>
+
+              <div class="col cal-title">
+                <h6>Hr(s)</h6>
+              </div>
+          </div>
+          
+          
+          <div id="field-bar" class="field g-3">
+            <!-- Items -->
+            <div class="field-item cal-item col-5">
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                <option value="tv">Television</option>
+                <option value="sound_system">Sound System</option>
+                <option value="fridge">Fidge or Freezer</option>
+                <option value="fan">Fan</option>
+                <option value="bulb">Bulb</option>
+                <option value="ac">Air Conditioner</option>
+                <option value="washing_machine">Washing Maching</option>
+                <option value="microwave">Microwave</option>
+                <option value="iron">Iron</option>
+                <option value="printer">Blender</option>
+                <option value="tv">Printer</option>
+              </select>
+            </div>
+
+            <!-- Quantity -->
+            <div class="field-qty cal-item col">
+              <input id="quant" class="form-control qty" type="number" min="1" max="1000">
+            </div>
+
+            <!-- Wattage -->
+            <div class="field-watt cal-item col">
+              <input id="wattage" name="quantity" class="form-control watt " type="number" min="10" max="1000"  step="5">
+            </div>
+
+            <!-- time -->
+            <div class="field-hr  cal-item col">
+              <input  class="form-control hour" type="number" min="1" max="24">
+            </div>
+            
+          </div>
+            <!-- function buttons -->
+            <button id="btn-more" class="btn btn-warning cal-btn">Add More</button>
+            <button id="btn-calculate" class="btn btn-warning cal-btn"> Calculate</button>
+            <button id="btn-reset" class="btn btn-warning cal-btn "> Reset</button>
+            <button id="back" class="btn btn-warning cal-btn reset-back">Back</button>
+
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Section 3 Load and installer -->
+    <section id="section-three"">
+      <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <h4>You need</h4>
+              <h1 id="sec-3-heading-text" class="sec-3-heading-text">2000VA</h1>
+              <h1 id="sec-3-heading-text-two" class="sec-3-heading-text">200AH Battery</h1>
+              <h1 id="sec-3-heading-text-three" class="sec-3-heading-text">40000watt Panel</h1>
+              <p class="sec-3-text" >let us help you determine the size of solar you need 
+                  for your home, office e.t.c.
+              </p>
+              <button id="find-installer" type="button" class="btn btn-sec-3 btn-dark btn-lg ">Find installer</button>
+              <button id="back-to-two" type="button" class="btn btn-sec-3 btn-outline-dark btn-lg">Back</button>
+          </div>
+
+            <!-- <div class="col-md-6 col-sm-12">
+                <div class="calculator">
+                    <input type="text"
+                </div>
+            </div> -->
+
+      </div>
+  </section>
+
+  <!-- ----section 4 connect with installer--- -->
+
+  <section class="section-4" id="section-four">
+    <div class="row ">
+      <h1>Find Installer</h1>
+      <p class="section-two-text">Find a verified Solar System installer with practical experience</p>
+      <div class="col-md-3 col-sm-6 inst">
+        <div class="inst-card">
+          <!-- installer image -->
+          <div class="inst-img">
+            <img src="/images/woodworker2.jpg">
+          </div>
+            <!-- installer bio -->
+          <div class="inst-bio">
+            <h4>Bamidele Odunlami</h4>
+          </div>
+         <!-- installer level and location -->
+          <div class="inst-level">
+              <div class="inst-level-lev">
+                  <h5>Level: 4/10</h5>
+              </div>
+              <div class="inst-level-location">
+                <h5>Location: Abeokuta</h5>
+              </div>
+          </div>
+
+          <a href="" class="inst-link btn btn-warning">Request Quote</a>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-sm-6 inst">
+        <div class="inst-card">
+          <!-- installer image -->
+          <div class="inst-img">
+            <img src="/images/woodworker2.jpg">
+          </div>
+            <!-- installer bio -->
+          <div class="inst-bio">
+            <h4>Bamidele Odunlami</h4>
+          </div>
+         <!-- installer level and location -->
+          <div class="inst-level">
+              <div class="inst-level-lev">
+                  <h5>Level: 1/10</h5>
+              </div>
+              <div class="inst-level-location">
+                <h5>Location: Abeokuta</h5>
+              </div>
+          </div>
+
+          <a href="" class="inst-link btn btn-warning">Request Quote</a>
+        </div>
+      </div>
+
+
+      <div class="col-md-3 col-sm-6 inst">
+        <div class="inst-card">
+          <!-- installer image -->
+          <div class="inst-img">
+            <img src="/images/woodworker2.jpg">
+          </div>
+            <!-- installer bio -->
+          <div class="inst-bio">
+            <h4>Bamidele Odunlami</h4>
+          </div>
+         <!-- installer level and location -->
+          <div class="inst-level">
+              <div class="inst-level-lev">
+                  <h5>Level: 4/10</h5>
+              </div>
+              <div class="inst-level-location">
+                <h5>Location: Abeokuta</h5>
+              </div>
+          </div>
+
+          <a href="" class="inst-link btn btn-warning">Request Quote</a>
+        </div>
+      </div>
+
+
+
+      <div class="col-md-3 col-sm-6 inst">
+        <div class="inst-card">
+          <!-- installer image -->
+          <div class="inst-img">
+            <img src="/images/woodworker2.jpg">
+          </div>
+            <!-- installer bio -->
+          <div class="inst-bio">
+            <h4>Bamidele Odunlami</h4>
+          </div>
+         <!-- installer level and location -->
+          <div class="inst-level">
+              <div class="inst-level-lev">
+                  <h4>Level: 4/10</h4>
+              </div>
+              <div class="inst-level-location">
+                <h5>Location: Abeokuta</h5>
+              </div>
+          </div>
+
+         <a href="" class="inst-link btn btn-warning">Request Quote</a>
+        </div>
+      </div>
+    
+    </div>
+
+    <div class="text-center cal-btn-again">
+      <button id="add-more-installer" type="button" class="btn btn-header btn-dark cal-again">Show more</button>
+      <button id="calculate-agin" type="button" class="btn btn-header btn-outline-dark cal-again">Calculate again</button>
+    </div>
+  
+  </section>
+  
+  <div class="footer text-center"> 
+    <h5>&copy 2022, a develpment of Greenthinker Solutions</h5>
+  </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="index.js" type="text/javascript"></script>
+    <script src="calculator.js" type="text/javascript"></script>
+  </body>
+  
+</html>

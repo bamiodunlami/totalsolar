@@ -1,0 +1,210 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    top: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hidden{
+display: none;
+}
+
+/* Special calculator width */
+
+h1{
+    font-size: 60px;
+    font-weight: 900;
+}
+
+h4{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+h5{
+    font-size: 18px;
+}
+
+.inst-bio p{
+    font-size: 18px;
+}
+
+p{
+    font-size: 22px;
+}
+
+section{
+    padding: 25vh 15%;
+}
+
+
+/* -------------------------------- */
+
+/* ----------------section 1------------ */
+
+#head-section{
+    background-color: #001924;
+    height: 100vh;
+}
+.heading-text{
+    color: #fff;
+}
+.btn-header {
+    margin-right: 20px;
+}
+
+
+/* -------Section two-------*/
+#section-two{
+    height: 100vh;
+}
+.cal{
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 5%;
+    justify-content: center;
+}
+
+.cal-title-bar{
+    display: flex;
+}
+.field{
+    display: flex;
+    justify-content:right;
+}
+
+.cal-item,
+.cal-title{
+   margin:5px;
+}
+.cal-btn{
+    margin: 20px 0 0 0;
+}
+
+
+
+/* //sectio  three */
+#section-three{
+    height: 100vh;
+    background-color: #ffc107;
+   color: #001924;
+}
+
+/* .btn-sec-3{
+    color: #001924;
+    background-color: #001924;
+} */
+
+.sec-3-heading-text{
+    padding: 15px;
+    border: 2px dashed #001924;
+    border-radius: 20px;
+    font-size: 36px;
+}
+
+
+/* Section four */
+#section-four{
+   background-color: #fafafa;
+}
+
+.inst{
+    margin-top: 3%;
+}
+
+.inst-card{
+    /* border: solid 2px #ebebeb; */
+    background-color: #fff;
+    padding: 8%;
+    box-shadow: #0000001f 0px 1px 3px, #0000003d 0px 1px 2px;
+}
+
+.inst-img img{
+    width: 100%;
+    height: auto;
+    overflow: hidden;   
+}
+
+.inst-level{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.inst-bio{
+    padding-top: 5%;
+}
+
+.cal-again{
+    margin-top: 3%;
+}
+
+
+/* ----footer----- */
+.footer{
+    background-color: #001924;
+    color: #fff;
+    padding: 10px;
+}
+
+
+
+
+@media (max-width: 420px){
+
+/* ----------Pre determination-----*/
+    h1{
+        font-size:38px;
+        font-weight: 900;
+        text-align: center;
+    }
+    
+    p{
+        font-size: 16px;
+        text-align: center;
+    }  
+
+    section{
+        padding: 20vh 8%;
+        
+    }
+/* ----------------------------- */
+
+#head-section{
+text-align: center;
+}
+
+.btn-header:last-child{
+    margin-top:10px;
+}
+
+/* section two */
+#section-two{
+    text-align: center;
+}
+
+
+/* Section three */
+
+/* section two */
+#section-three{
+    text-align: center;
+}
+.sec-3-heading-text{
+    font-size: 32px;
+}
+.reset-back{
+    width: 100%;
+}
+
+
+/* ------sectio 4------ */
+.inst{
+    padding-top: 5%;
+}
+
+.cal-btn-again{
+    margin-top: 6%;
+}
+
+}
