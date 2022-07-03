@@ -5,12 +5,14 @@ $(document).ready(function(){
     $("#section-two").hide();
     $("#section-three").hide();
     $("#section-four").hide();
+    // $("#nav-area").css('background-color', '#ffc107');
 
 
     //move to calculator
     $("#calculate").on('click', function(){
         $("#head-section").slideToggle();
         $("#section-two").show();
+        // $("#nav-area").css('background-color', '#ffc107');
     });
 
     // Get quote button
@@ -37,6 +39,7 @@ $(document).ready(function(){
     $("#btn-calculate").on("click", function(){
         $("#section-two").slideToggle();
         $("#section-three").show();
+        $("#nav-area").css('background-color', "#fff");
     });
 
     // $("#back-to-two").click(function(){
@@ -56,10 +59,18 @@ $(document).ready(function(){
         //  $("#field-bar").hide(field-1);
     });
 
-    //fomd installer button
+    //find installer button
     $("#find-installer").on('click', function(){
         $("#section-three").slideUp();
         $("#section-four").slideDown();
+        $("#nav-area").css('background-color', '#ffc107');
+    });
+
+    //Back to slide two
+    $("#back-to-two").click(function(){
+        $("#section-two").slideDown();
+        $("#section-three").hide();
+        $("#nav-area").css('background-color', '#ffc107');
     });
 
     // calculate again

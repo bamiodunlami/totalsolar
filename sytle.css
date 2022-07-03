@@ -40,7 +40,29 @@ section{
 
 
 
-/* -------------------------------- */
+/* --------------Nav area------------------ */
+
+/* ----footer----- */
+.nav-area{
+  
+    background-color: #ffc107;
+    position: fixed;
+    width: 100%;
+    padding: 1.5vh 8% 0 8%;
+}
+.cov{
+    display: flex;
+    justify-content: center;
+}
+.cov-icon{
+    font-size: 20px;
+}
+.cov-item{
+    margin: 5px 20px;
+    text-align: center;
+}
+
+
 
 /* ----------------section 1------------ */
 
@@ -123,6 +145,7 @@ section{
 
 /* Section four */
 #section-four{
+    height: 100vh;
    background-color: #fafafa;
 }
 
@@ -157,17 +180,12 @@ section{
 }
 
 
-/* ----footer-----
-.footer{
-    background-color: #001924;
-    color: #fff;
-    padding: 10px;
-} */
+
 
 
 
 /* mobile phone */
-@media (max-width: 420px){
+@media (max-width: 480px){
 
 /* ----------Pre determination-----*/
     h1{
@@ -187,9 +205,17 @@ section{
     }
 /* ----------------------------- */
 
+.cov-item{
+    margin: 5px 8px;
+    text-align: center;
+}
+
+
+/* ---------section one------------ */
+
 #head-section{
 text-align: center;
-padding-top: 15vh;
+padding-top: 20vh;
 }
 
 .row1{
